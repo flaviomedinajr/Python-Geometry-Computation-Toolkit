@@ -99,7 +99,7 @@ def equilateral():
 def trapezoid():
 
     base_1 = input("\nEnter base 1: ")
-    base_2 = input("\nEnter base 2: ")
+    base_2 = input("Enter base 2: ")
     height = input("Enter height: ")
 
     base_1 = int(base_1)
@@ -115,3 +115,23 @@ def trapezoid():
     height = float(height)
 
     print(f"Trapezoid: Base 1 = {base_1}, Base 2 = {base_2}, Height = {height}, Area = {area}\n")
+
+
+# Main 
+def main():
+
+    circle()
+
+    sphere()
+
+    rectangle()
+
+    square()
+
+    isosceles()
+
+    equilateral()
+
+    trapezoid()
+
+main()
