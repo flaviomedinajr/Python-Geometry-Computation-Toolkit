@@ -32,7 +32,7 @@ def rectangle():
     width = float(input("Enter the width: "))
 
     area = float(height * width)
-    
+
     print(f"Rectangle: height = {height}, width = {width}, Area = {area}")
 
 # Area of a square given a side length 
@@ -56,3 +56,15 @@ def isosceles():
     area = 1/2 * height * base
 
     print(f"Isosceles Triangle: side = {leg}, height = {height}, Area = {area}")
+
+
+# Area of an equilateral triangle given a side length
+def equilateral():
+
+    length_equ = float(input("\nEnter the side length: "))
+
+    do_math_area_of_eq = ((3 ** (1/2) / 4))
+    area_of_eq = float(do_math_area_of_eq * (length_equ ** 2))
+
+    print(f"Equilateral Triangle: side = {length_equ}, Area = {area_of_eq}")
+
