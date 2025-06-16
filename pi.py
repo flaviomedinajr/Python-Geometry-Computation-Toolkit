@@ -28,24 +28,31 @@ def sphere():
 # Area of a rectangle given a height and width
 def rectangle():
 
-    height = int(input("\nEnter the height: "))
-    width = int(input("Enter the width: "))
+    height = float(input("\nEnter the height: "))
+    width = float(input("Enter the width: "))
 
-    area = height * width 
-    height = float(height)
-    width = float(width)
-    area = float(area)
-
+    area = float(height * width)
+    
     print(f"Rectangle: height = {height}, width = {width}, Area = {area}")
 
 # Area of a square given a side length 
 def square():
-    length = int(input("\nEnter the side length: "))
+    length = float(input("\nEnter the side length: "))
     
-    area = length ** 2
-
-    area = float(area)
-    length = float(length)
+    area = float(length ** 2)
 
     print(f"Square: side length = {length}, Area = {area}")
 
+# Area of an isosceles triangle given the length of one leg 
+# and the height
+def isosceles():
+
+    leg = float(input("\Enter the leg length: "))
+    height = float(input("Enter the height: "))
+
+    do_math_base = ((leg ** 2 - height ** 2) ** (1/2))
+    base = 2 * do_math_base
+
+    area = 1/2 * height * base
+
+    print(f"Isosceles Triangle: side = {leg}, height = {height}, Area = {area}")
