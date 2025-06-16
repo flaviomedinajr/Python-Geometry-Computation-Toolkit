@@ -1,8 +1,8 @@
 PI = 3.14159
 
-# ALL ONCE IN MAIN
-def main():
-    # For Area - Area of a circle given a radius.
+
+# Area of a circle given a radius.
+def circle():
 
     radius = input("\nEnter the radius: ")
 
@@ -14,7 +14,8 @@ def main():
     print(f"Circle: r = {radius}, Area = {area}")
 
 
-    # For Sphere - Volume of a sphere given a radius 
+# Volume of a sphere given a radius 
+def sphere():
 
     radius = input("\nEnter the radius: ")
 
@@ -26,7 +27,8 @@ def main():
     print(f"Sphere: r = {radius}, Volume = {volume}")
 
 
-    # For Rectangle - Area of a rectangle given a height and width
+# Area of a rectangle given a height and width
+def rectangle():
 
     height = input("\nEnter the height: ")
     width = input("Enter the width: ")
@@ -42,7 +44,8 @@ def main():
     print(f"Rectangle: Height = {height}, Width = {width}, Area = {area}")
 
 
-    # For Square - Area of a square given a side length 
+# Area of a square given a side length 
+def square():
 
     lenght = input("\nEnter the side lenght: ")
 
@@ -56,8 +59,8 @@ def main():
     print(f"Square: Side Length = {lenght},  Area = {area}")
 
 
-    # For Isosceles - Area of an isosceles triangle given the length of one leg 
-    # and the height.
+# Area of an isosceles triangle given the length of one leg and the height.
+def isosceles():
 
     leg = input("\nEnter the leg length: ")
     height = input("Enter the height: ")
@@ -68,7 +71,7 @@ def main():
     do_math_base = ((leg ** 2 - height ** 2) ** (1 / 2))
     base = 2 * do_math_base 
 
-    area = 0.5 * height * base
+    area = 1/2 * height * base
 
     area = float(area)
     leg = float(leg)
@@ -77,7 +80,8 @@ def main():
     print(f"Isosceles Triangle: Leg Length = {leg}, Height = {height}, Area = {area}")
 
 
-    # For Equilateral - Area of an equilateral triangle given a side length.
+# Area of an equilateral triangle given a side length.
+def equilateral():
 
     length_equ = input("\nEnter the side length: ")
 
@@ -92,7 +96,8 @@ def main():
     print(f"Equilateral Triangle: Side Length = {length_equ}, Area = {area_of_eq}")
 
 
-    # For Trapezoid - Area of a trapezoid given base 1, base 2, and height
+# Area of a trapezoid given base 1, base 2, and height
+def trapezoid():
 
     base_1 = input("\nEnter base 1: ")
     base_2 = input("Enter base 2: ")
@@ -112,16 +117,32 @@ def main():
 
     print(f"Trapezoid: Base 1 = {base_1}, Base 2 = {base_2}, Height = {height}, Area = {area}\n")
 
+
+# Main 
+def main():
+
+    circle()
+
+    sphere()
+
+    rectangle()
+
+    square()
+
+    isosceles()
+
+    equilateral()
+
+    trapezoid()
+
 main()
 
 
 
-# ANOTHER APPROACHED THIS CODE: 
-
-# PI = 3.14159
-
-# # Area of a circle given a radius.
-# def circle():
+# Runs all at once through a single main() function
+# That is another approached this code
+# def main():
+#     # For Area - Area of a circle given a radius.
 
 #     radius = input("\nEnter the radius: ")
 
@@ -133,8 +154,7 @@ main()
 #     print(f"Circle: r = {radius}, Area = {area}")
 
 
-# # Volume of a sphere given a radius 
-# def sphere():
+#     # For Sphere - Volume of a sphere given a radius 
 
 #     radius = input("\nEnter the radius: ")
 
@@ -146,8 +166,7 @@ main()
 #     print(f"Sphere: r = {radius}, Volume = {volume}")
 
 
-# # Area of a rectangle given a height and width
-# def rectangle():
+#     # For Rectangle - Area of a rectangle given a height and width
 
 #     height = input("\nEnter the height: ")
 #     width = input("Enter the width: ")
@@ -163,8 +182,7 @@ main()
 #     print(f"Rectangle: Height = {height}, Width = {width}, Area = {area}")
 
 
-# # Area of a square given a side length 
-# def square():
+#     # For Square - Area of a square given a side length 
 
 #     lenght = input("\nEnter the side lenght: ")
 
@@ -178,8 +196,8 @@ main()
 #     print(f"Square: Side Length = {lenght},  Area = {area}")
 
 
-# # Area of an isosceles triangle given the length of one leg and the height.
-# def isosceles():
+#     # For Isosceles - Area of an isosceles triangle given the length of one leg 
+#     # and the height.
 
 #     leg = input("\nEnter the leg length: ")
 #     height = input("Enter the height: ")
@@ -190,7 +208,7 @@ main()
 #     do_math_base = ((leg ** 2 - height ** 2) ** (1 / 2))
 #     base = 2 * do_math_base 
 
-#     area = 1/2 * height * base
+#     area = 0.5 * height * base
 
 #     area = float(area)
 #     leg = float(leg)
@@ -199,8 +217,7 @@ main()
 #     print(f"Isosceles Triangle: Leg Length = {leg}, Height = {height}, Area = {area}")
 
 
-# # Area of an equilateral triangle given a side length.
-# def equilateral():
+#     # For Equilateral - Area of an equilateral triangle given a side length.
 
 #     length_equ = input("\nEnter the side length: ")
 
@@ -215,8 +232,7 @@ main()
 #     print(f"Equilateral Triangle: Side Length = {length_equ}, Area = {area_of_eq}")
 
 
-# # Area of a trapezoid given base 1, base 2, and height
-# def trapezoid():
+#     # For Trapezoid - Area of a trapezoid given base 1, base 2, and height
 
 #     base_1 = input("\nEnter base 1: ")
 #     base_2 = input("Enter base 2: ")
@@ -235,23 +251,5 @@ main()
 #     height = float(height)
 
 #     print(f"Trapezoid: Base 1 = {base_1}, Base 2 = {base_2}, Height = {height}, Area = {area}\n")
-
-
-# # Main 
-# def main():
-
-#     circle()
-
-#     sphere()
-
-#     rectangle()
-
-#     square()
-
-#     isosceles()
-
-#     equilateral()
-
-#     trapezoid()
 
 # main()
