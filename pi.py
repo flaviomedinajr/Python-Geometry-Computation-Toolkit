@@ -1,3 +1,5 @@
+# Author: Flavio Medina
+
 PI = 3.14159
 
 
