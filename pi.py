@@ -25,14 +25,11 @@ def sphere():
 
     print("Sphere: r = ", radius, ", ", "Volume = ", volume)
 
-
+# Area of a rectangle given a height and width
 def rectangle():
 
-    height = input("\nEnter the height: ")
-    width = input("Enter the width: ")
-
-    height = int(height)
-    width = int(width)
+    height = int(input("\nEnter the height: "))
+    width = int(input("Enter the width: "))
 
     area = height * width 
     height = float(height)
@@ -40,4 +37,15 @@ def rectangle():
     area = float(area)
 
     print(f"Rectangle: height = {height}, width = {width}, Area = {area}")
+
+# Area of a square given a side length 
+def square():
+    length = int(input("\nEnter the side length: "))
     
+    area = length ** 2
+
+    area = float(area)
+    length = float(length)
+
+    print(f"Square: side length = {length}, Area = {area}")
+
